@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainScreenViewController" customModule="TableViewLogin" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="h9y-Mu-imv" id="U5M-0O-g9d"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBack" translatesAutoresizingMaskIntoConstraints="NO" id="oa2-Rm-uLp">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="h9y-Mu-imv">
+                    <rect key="frame" x="0.0" y="138" width="393" height="668"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="668" id="Pnq-ak-90q"/>
+                    </constraints>
+                    <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FFi-E6-CU9">
+                    <rect key="frame" x="10" y="88" width="373" height="28"/>
+                    <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="28"/>
+                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FFi-E6-CU9" secondAttribute="trailing" constant="10" id="LKG-cG-UPB"/>
+                <constraint firstItem="h9y-Mu-imv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="MYK-Of-p1a"/>
+                <constraint firstItem="oa2-Rm-uLp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MiW-D1-UjE"/>
+                <constraint firstAttribute="bottom" secondItem="oa2-Rm-uLp" secondAttribute="bottom" id="OC5-Gb-RIe"/>
+                <constraint firstItem="FFi-E6-CU9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="29" id="R0Q-6g-anb"/>
+                <constraint firstAttribute="trailing" secondItem="oa2-Rm-uLp" secondAttribute="trailing" id="U1c-8w-5W1"/>
+                <constraint firstItem="h9y-Mu-imv" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="cqW-uw-aFL"/>
+                <constraint firstItem="FFi-E6-CU9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="m3M-SC-kgI"/>
+                <constraint firstItem="oa2-Rm-uLp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="o29-CL-aN6"/>
+                <constraint firstItem="h9y-Mu-imv" firstAttribute="top" secondItem="FFi-E6-CU9" secondAttribute="bottom" constant="22" id="tX2-0D-IXB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="h9y-Mu-imv" secondAttribute="bottom" constant="12" id="wxn-bh-UZO"/>
+            </constraints>
+            <point key="canvasLocation" x="139.69465648854961" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="loginBack" width="960" height="600"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
